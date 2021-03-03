@@ -1,0 +1,270 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text-",
+				"text-transform\tproperty"
+			],
+			[
+				"text",
+				"text-transform\tproperty"
+			],
+			[
+				"font-",
+				"font-style\tproperty"
+			],
+			[
+				"td",
+				"td\tTag"
+			],
+			[
+				"te",
+				"text-decoration\tproperty"
+			],
+			[
+				"background-",
+				"background-color\tproperty"
+			],
+			[
+				"i",
+				"important"
+			],
+			[
+				"quat",
+				"quarter"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 124.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/webDevelopment/Projects/homePageRedesign"
+	],
+	"file_history":
+	[
+		"/E/$Cache/Dropbox/BC/2021/Admissions/Graduate/Meet/meet-template.html",
+		"/C/Users/Charles/Desktop/timer.html",
+		"/E/$Cache/Dropbox/BC/2021/Admissions/Graduate/Meet/meet-our-template.html",
+		"/E/$Cache/Google Drive Doogaji/Projects/TCPI/Dev/code-snippets.html",
+		"/E/$Cache/Google Drive Doogaji/Projects/Fire Came Later/Website/fcl.css",
+		"/D/webDevelopment/MASTER/config.rb",
+		"/E/$Cache/Google Drive Doogaji/Projects/TCPI/Dev/script-tester.html",
+		"/E/$Cache/Google Drive Doogaji/Projects/SOB/Site/SOB.css",
+		"/D/imagery/Magazine/magazine.css",
+		"/E/$Cache/Dropbox/BC/CSS/Feirstein/fgsc.css",
+		"/E/$Cache/Dropbox/BC/2020/Admissions/ALA/Winter 2021/IEP-Comm-WI21-3.html",
+		"/E/$Cache/Google Drive Doogaji/Projects/SOB/Site/homepage-OLD.html",
+		"/E/$Cache/Google Drive Doogaji/Projects/SOB/Site/homepage-201231.html",
+		"/E/$Cache/Dropbox/BC/2020/Admissions/ALA/Winter 2021/TOEFL-Comm-WI21.html",
+		"/E/$Cache/Dropbox/BC/2020/Admissions/ALA/Winter 2021/Acceptance.html",
+		"/C/Users/Charles/Downloads/givingback.html",
+		"/E/$Cache/Google Drive Doogaji/Projects/TCPI/Faculty/Members/RONGIL/Funnels/RGCS-custom.css",
+		"/E/$Cache/Dropbox/BC/2020/TEO/AP_Chart_as_of_2020.html",
+		"/E/$Cache/Dropbox/BC/2020/TEO/IB_Equivalents.html",
+		"/D/imagery/Magazine/css.css",
+		"/E/$Cache/Dropbox/BC/2020/Admissions/ALA/Winter 2021/IEP-NewF1-WI21-2.html",
+		"/E/$Cache/Dropbox/BC/2020/Admissions/ALA/Winter 2021/IEP-Transfer-WI21.html",
+		"/E/$Cache/Dropbox/BC/2020/Admissions/ALA/Winter 2021/IEP-Comm-WI21.html",
+		"/E/$Cache/Dropbox/BC/2020/Admissions/ALA/Winter 2021/IEP-New-Transfer-Acceptance-WI21.html",
+		"/C/Users/Charles/Desktop/123.html",
+		"/E/$Cache/Dropbox/BC/2020/Admissions/ALA/Winter 2021/IEP-NewF1-WI21.html",
+		"/E/$Cache/Dropbox/BC/2020/Admissions/ALA/Winter 2021/IEP-new-Transfer-Acceptance-WI21.html",
+		"/E/$Cache/Dropbox/BC/2020/Communications/Virtual Tour/lity-2.4.1/BC-test.html",
+		"/E/$Cache/Dropbox/BC/CSS/Feirstein/app.css",
+		"/C/Users/Charles/Downloads/html.html",
+		"/E/$Cache/Dropbox/BC/2020/Admissions/ALA/003/IEP-Comm-FA20.html",
+		"/C/Users/Charles/Downloads/tableau2.html",
+		"/E/$Cache/Dropbox/BC/CSS/Feirstein/app.min.css",
+		"/C/Users/Charles/Downloads/tableau.html",
+		"/E/$Cache/Dropbox/BC/2020/Communications/Virtual Tour/lity-2.4.1/assets/style.css",
+		"/E/$Cache/Dropbox/BC/2020/Communications/Virtual Tour/lity-2.4.1/assets/prism.js",
+		"/E/$Cache/Dropbox/BC/2020/Communications/Virtual Tour/lity-2.4.1/assets/prism.css",
+		"/E/$Cache/Dropbox/BC/2020/Centers/BLL/Email-New.html",
+		"/E/$Cache/Dropbox/BC/CSS/filmSite.css",
+		"/E/$Cache/Dropbox/BC/2020/Communications/Virtual Tour/lity-2.4.1/vendor/jquery.js",
+		"/E/$Cache/Dropbox/BC/CSS/Magazine.css",
+		"/D/imagery/Magazine/7.1/Website Content/FEA-A Literary Full Circle - On Writing and Their Latest Books.html",
+		"/D/imagery/Magazine/7.1/Website Content/Message from the President.html",
+		"/D/imagery/Magazine/7.1/Website Content/RD-Chester.html",
+		"/D/imagery/Magazine/7.1/Website Content/AN-Shirley Chisholm.html",
+		"/D/imagery/Magazine/7.1/Website Content/BL-Swapping the Classroom for a Runway.html",
+		"/E/$Cache/Dropbox/BC/2020/Admissions/ALA/003/IEP-NewF1-FA20.html",
+		"/E/$Cache/Dropbox/BC/2020/Admissions/ALA/003/PTEP-FA20.html",
+		"/E/$Cache/Dropbox/BC/2020/Admissions/ALA/003/IEP-Transfer-FA20.html",
+		"/E/$Cache/Google Drive Doogaji/Projects/TCPI/Faculty/Members/RONGIL/Funnels/script-tester.html",
+		"/E/$Cache/Google Drive Doogaji/Projects/TCPI/Faculty/Members/RONGIL/Funnels/code-snippets.html",
+		"/E/$Cache/Dropbox/BC/2020/ALA/003/IEP-Comm-FA20.html",
+		"/E/$Cache/Dropbox/BC/2020/ALA/003/PTEP-FA20.html",
+		"/E/$Cache/Dropbox/BC/2020/ALA/003/IEP-Transfer-FA20.html",
+		"/E/$Cache/Dropbox/BC/2020/ALA/003/IEP-NewF1-FA20.html",
+		"/E/$Cache/Google Drive Doogaji/Projects/TCPI/Ron-Coaching/Marketing/script-tester.html",
+		"/E/$Cache/Google Drive Doogaji/Projects/TCPI/Ron-Coaching/Marketing/code-snippets.html",
+		"/E/$Cache/Dropbox/BC/2020/Admissions/Open House/graduate.html",
+		"/E/$Cache/Dropbox/BC/2020/Hitchcock/AMR_49-2_Stokes.html",
+		"/E/$Cache/Dropbox/BC/2020/Hitchcock/AMR_49-2_Yom.html",
+		"/E/$Cache/Dropbox/BC/2020/Hitchcock/AMR_49-2_Rosenthal.html",
+		"/E/$Cache/Dropbox/BC/2020/Hitchcock/AMR_49-2_Johnston.html",
+		"/E/$Cache/Dropbox/BC/2020/Hitchcock/AMR_49-2_Fulton.html",
+		"/E/$Cache/Dropbox/BC/2020/Hitchcock/AMR_49-2_Coles.html",
+		"/E/$Cache/Dropbox/BC/2020/Hitchcock/AMR_49-2_Eckenroth.html",
+		"/E/$Cache/Dropbox/BC/2020/Hitchcock/AMR_49-2_News.html"
+	],
+	"find":
+	{
+		"height": 46.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "homePageRedesign.sublime-project",
+	"replace":
+	{
+		"height": 84.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 177.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
