@@ -1,0 +1,144 @@
+// Colors
+$maroon: #7b2240;
+$yellow: #FAD129;
+$white: #fff;
+
+//$gray-light: ;
+$gray-med: #D9D9D9;
+$gray-10: #636569;
+$gray-11: #54565a;
+
+// Line Weights
+$OnePX: 1px solid;
+$TwoPX: 2px solid;
+$ThreePX: 3px solid;
+$FourPX: 4px solid;
+
+// Breaks for visibility
+// $small-breakpoint:  em-calc(600);
+// $medium-breakpoint: em-calc(768);
+// $large-breakpoint:  em-calc(1024);
+// $xlarge-breakpoint: em-calc(1400);
+
+$phoneS: 640px; // smaller = mobile, 640-0 is mobile
+$tabletS: 1024px; // smaller = tablet, 1024-640 is tablet
+$desktopS: 1440px; // smaller = desktop, 1440-1024 is DT
+$x-largeS: 1920px; // unused
+
+// @media query examples
+
+// affects BETWEEN max and min. Max is the larger #; Min is the smaller #
+@media screen and (max-width: $desktopS) and (min-width: $phoneS) {
+	
+}
+
+// affects BELOW max-width
+@media only screen and (max-width: $desktopS) {
+	
+}
+
+// affects ABOVE min-width 
+@media only screen and (min-width: $desktopS) {
+
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+// test styles
+
+.row, .columns {
+	border: $OnePX $yellow; //yellow
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
+// Full Width
+.full-width {
+	width: 100%;
+	max-width: 100%;
+	//min-width: 1400px;
+	// background-image: url("image.jpg"); // this probably needs to be inline vs here.
+	//margin: auto;
+}
+
+// backgrounds 
+.yellowBG {
+	background-color: $yellow;
+}
+.maroonBG {
+	background-color: $maroon;
+}
+
+.gray-11BG {
+	background-color: $gray-11;
+}
+
+// Hiding
+// hide on Phone Screens
+@media only screen and (max-width: $phoneS) {
+	.hopas {
+		display: none;
+	}
+}
+// hide on Tablet and smaller Screens
+@media only screen and (max-width: $tabletS) {
+	.hotas {
+		display: none;
+	}
+}
+// hide on Desktop and smaller Screens
+@media only screen and (max-width: $desktopS) {
+	.hodas {
+		display: none;
+	}
+}
+
+// Showing
+// show on Desktop and smaller
+@media only screen and (min-width: $desktopS) {
+	.sodas {
+		display: none;
+	}
+}
+// show on Tablet and smaller
+@media only screen and (min-width: $tabletS) {
+	.sotas {
+		display: none;
+	}
+}
+// show on Phone and smaller
+@media only screen and (min-width: $phoneS) {
+	.sopas {
+		display: none;
+	}
+}
+
+// SkipNav 
+#skipnav {
+	a {
+		
+		position:absolute;
+		z-index:3000;
+		clip:rect(0 0 0 0);
+		height:1px;
+		width:1px;
+		padding-bottom:25px;
+		&:hover, &:focus, &:active{
+			clip:auto;
+			left:0;top:0;
+			width:100%;
+			height:auto;
+			margin:0;
+			padding:10px 0;
+			background:#fdf6e7;
+			border:2px solid #990000;
+			border-left:none;
+			border-right:none;
+			text-align:center;
+			font-weight:bold;
+			color:#990000;
+		}
+	}
+}
+
