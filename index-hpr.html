@@ -4,111 +4,398 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page Redesign</title>
+
+    <!-- Styles -->
     <link rel="stylesheet" href="css/hpr.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
 
+    <!-- JS -->
+    <script src="http://www.brooklyn.cuny.edu/web/js/foundation/bower_components/modernizr/modernizr.js"></script> <!-- Modernizr -->
+    <!--<script src="bower_components/jquery/dist/jquery.min.js"></script>-->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="http://www.brooklyn.cuny.edu/web/js/foundation/foundation.js"></script>
 
-
+    <!-- Features -->
+    <script src="http://www.brooklyn.cuny.edu/web/js/response-bcstories.js"></script> <!--// responsive content images//--> 
+    <script src="http://www.brooklyn.cuny.edu/web/js/slick.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="assets/Multi-Level-Sidebar-Menu-HC-MobileNav/docs/hc-offcanvas-nav.js?ver=6.1.3"></script>
 
 
 
 
   </head>
-  <body>
+  <body data-responsejs='{"create" : {"mode" : "src", "prefix" : "src"}}'>
+
+
+
 
 
 <div class="hpWrapper">
 
+
+
   <!-- colorbar -->
-  <div class="">
-    <div class="row yellowBG">
-      <div class="small-12 columns">maroon bar</div>
+  <div class="maroonBG maroonBar">
+    <div class="row ">
+      <div class="small-12 columns"></div>
+    </div>
+  </div>
+
+  <!-- spacer on mobile (pushes the content down) -->
+  <div class="mobileSpacer sotas">
+    <div class="row">
+      <div class="small-12 columns"></div>
     </div>
   </div>
 
   <!-- header -->
-  <div class="full-width maroonBG">
-    <header class="row yellowBG">
-      <div class="small-12 columns">
-        <nav class="row desktopNav hotas">
-          <div class="small-12 columns hopas">logo, buttons, nav row, CUNY</div>
+  <header class="full-width gray-medBG">
+
+    <div class="row">
+      <div class="small-12 columns ">
+        
+        <div class="desktop hotas"> <!--hotas-->
+
+          <div class="row">    
+            <div class="small-12 columns ">
+
+              <!--logo-->
+              <a href="#"><img class="BC" src="images/BC-Logo-Maroon-276x115.png"></a>
+              <!--buttons-->
+              <ul class="buttons">
+                <li><a href="#">Apply</a></li>
+                <li><a href="#">Give</a></li>
+                <li><a href="#">Search</a></li>
+              </ul>
+              <!--CUNY-->
+              <a href="#"><img class="CUNY" src="images/CUNY-Logo-Gray-77x76.png"></a>
+           
+
+              <!--nav-->
+              <nav class="desktopNav">
+                  <ul class="first-nav">
+                    <li class="about">
+                      <a href="http://www.brooklyn.cuny.edu/web/about.php">About</a>
+                      <ul class="subnavs">
+                        <li><a href="#">Level 2A</a></li>
+                        <li><a href="#">Level 2B</a></li>
+                      </ul>
+                    </li>
+                    <li class="academics">
+                      <a href="http://www.brooklyn.cuny.edu/web/academics.php">Academics</a>
+                      <ul class="subnavs">
+                        <li><a href="#">Level 2C</a></li>
+                        <li><a href="#">Level 2D</a></li>
+                      </ul>
+                    </li>
+                    <li class="admissions">
+                      <a href="http://www.brooklyn.cuny.edu/web/admissions.php">Admissions</a>
+                      <ul class="subnavs">
+                        <li><a href="#">Level 2E</a></li>
+                        <li><a href="#">Level 2F</a></li>
+                      </ul>
+                    </li>
+                    <li class="campuslife">
+                      <a href="http://www.brooklyn.cuny.edu/web/campuslife.php">Campus Life</a>
+                      <ul class="subnavs">
+                        <li><a href="#">Level 2G</a></li>
+                        <li><a href="#">Level 2H</a></li>
+                      </ul>
+                    </li>
+                    <li class="athletics">
+                      <a href="http://www.brooklyn.cuny.edu/web/athletics.php">Athletics</a>
+                      <ul class="subnavs">
+                        <li><a href="#">Level 2I</a></li>
+                        <li><a href="#">Level 2J</a></li>
+                      </ul>
+                    </li>
+                    <li class="foryou">
+                      <a href="http://www.brooklyn.cuny.edu/web/athletics.php">For You</a>
+                      <ul class="subnavs">
+                        <li><a href="#">Level 2K</a></li>
+                        <li><a href="#">Level 2L</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+              </nav>
+
+                  
+
+            </div>
+          </div>
+        </div>
+
+
+        <nav class="mobileNav sotas"> <!--sotas-->
+          <div class="row">
+            <div class="small-12 columns ">
+              <!--all-->
+              <div class="wrapper cf">
+                <a class="toggle" href="#">
+                  <span></span>
+                  <!--words-->
+                </a>
+
+                <nav id="mobile-nav">
+
+                  <h3 class="logo"><a href="#"><img class="BCMobile" src="images/BC-Logo-White-227x95.png"></a></h3>
+
+                  <ul class="first-nav">
+                    <li class="about">
+                      <a href="http://www.brooklyn.cuny.edu/web/about.php">About</a>
+                      <ul>
+                        <li><a href="#">Level 2A</a></li>
+                        <li><a href="#">Level 2B</a></li>
+                      </ul>
+                    </li>
+                    <li class="academics">
+                      <a href="http://www.brooklyn.cuny.edu/web/academics.php">Academics</a>
+                      <ul class="subnavs">
+                        <li><a href="#">Level 2C</a></li>
+                        <li><a href="#">Level 2D</a></li>
+                      </ul>
+                    </li>
+                    <li class="admissions">
+                      <a href="http://www.brooklyn.cuny.edu/web/admissions.php">Admissions</a>
+                      <ul class="subnavs">
+                        <li><a href="#">Level 2E</a></li>
+                        <li><a href="#">Level 2F</a></li>
+                      </ul>
+                    </li>
+                    <li class="campuslife">
+                      <a href="http://www.brooklyn.cuny.edu/web/campuslife.php">Campus Life</a>
+                      <ul class="subnavs">
+                        <li><a href="#">Level 2G</a></li>
+                        <li><a href="#">Level 2H</a></li>
+                      </ul>
+                    </li>
+                    <li class="athletics">
+                      <a href="http://www.brooklyn.cuny.edu/web/athletics.php">Athletics</a>
+                      <ul class="subnavs">
+                        <li><a href="#">Level 2I</a></li>
+                        <li><a href="#">Level 2J</a></li>
+                      </ul>
+                    </li>
+                    <li class="foryou">
+                      <a href="http://www.brooklyn.cuny.edu/web/athletics.php">For You</a>
+                      <ul class="subnavs">
+                        <li><a href="#">Level 2K</a></li>
+                        <li><a href="#">Level 2L</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <h3 class="social">social images</h3>
+                  <h3 class="logo"><a href="#"><img class="CUNYMobile" src="images/CUNY-Name-White-122x51.png"></a></h3>
+                  
+
+                  <!--<h3>2nd nav</h3>
+
+                  <ul class="second-nav">
+                    <li class=""><a href="#">Collection 1</a></li>
+                    <li class=""><a href="#">Collection 2</a></li>
+                    <li class=""><a href="#">Collection 3</a></li>
+                  </ul>-->
+
+                  <!-- <h3>Bottom Nav</h3> -->
+                  <!--<ul class="bottom-nav">
+                    <li class="">
+                      <a href="#">One</a>
+                    </li>
+                    <li class="">
+                      <a href="#">Two</a>
+                    </li>
+                    <li class="">
+                      <a href="#">Three</a>
+                    </li>
+                  </ul>-->
+
+                </nav>
+                
+                <script>
+                  (function($) {
+                    'use strict';
+
+                    // call our plugin
+                    var Nav = new hcOffcanvasNav('#mobile-nav', {
+                      width: 350,
+                      disableAt: false,
+                      customToggle: '.toggle',
+                      levelSpacing: 40,
+                      navTitle: 'Close', //can be an image
+                      levelTitles: true,
+                      levelTitleAsBack: true,
+                      pushContent: '.hpWrapper',
+                      labelClose: false,
+                      position: 'right',
+                      levelOpen: 'expand',
+                      levelSpacing: '40',
+                      navClass: "HPRMN",
+                      rtl: false,
+                      ariaLabels: {open: 'Open Menu', close: 'Close Menu', submenu: 'Submenu'},
+                    });
+                  })(jQuery);
+                </script>
+
+              </div>
+
+            </div>
+          </div>
         </nav>
-        <nav class="row mobileNav sotas">
-          <div class="small-12 columns sotas">logo, CUNY, mobile menu</div>
-        </nav>
+
       </div>
-    </header>
-  </div>
+    </div>
+  </header>
 
   <!-- alert -->
-  <section class="row">alerts</section>
+  <section class="alert full-width yellowBG soas">
+    <div class="row">
+      <div class="small-12 columns"><h2><a href="#">COVID-19 Guidelines: Information for Our #BCFamily</a></h2></div>
+    </div>
+  </section>
 
-  <!-- slider -->
-  <section class="row">hero slider</section>
+  <!-- banner slider -->
+  <div class="banner">
+    <div class="row">
+      <div class="small-12 columns">
+        <!-- con - this can be anything -->
+        <section class="ghytr slider">
+          <div class="bannerSlide">
+            <img class="" src="http://www.brooklyn.cuny.edu/web/com_misc/Slider-01.jpg">
+            <div class="textElements">
+                <p>Ready for Grad School?</p>
+                <p>Join one of our <a href="#">admissions events</a> to learn more about what we offer.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img class="" src="http://www.brooklyn.cuny.edu/web/com_misc/Slider-01.jpg">
+            <div class="textElements">
+                <p>Ready for Grad School?</p>
+                <p>Join one of our <a href="#">admissions events</a> to learn more about what we offer.</p>
+             </div>
+          </div>
+        </section>
+        <script type="text/javascript">
+            $(document).on('ready', function() {
+              $(".ghytr").slick({
+                accessibility: true,
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                swipeToSlide: true,
+                autoplay: false,
+                autoplaySpeed: 250,
+                speed: 250,
+                fade: false,
+                draggable: true,
+                focusOnSelect: true,
+                mobileFirst: true,
+                pauseOnFocus: true,
+                pauseOnHover: true,
+                respondTo:'window',
+                arrows: true,
+                //prevArrow: 
+                //nextArrow: 
+              });
+            });
+        </script>
 
-  <!-- Admissions -->
-  <section class="row"><p>Admissions title, 4 coulmns of links</p>
-    <div class="medium-3 small-12 columns hopas">1</div>
-    <div class="medium-3 small-12 columns">2</div>
-    <div class="medium-3 small-12 columns">3</div>
-    <div class="medium-3 small-12 columns hopas">4</div>
-  </section> 
+      </div>
+    </div>
+  </div>
+
+  <footer class="full-width soas gray-11BG footer"></p>
+    <div class="row">
+      <div class="small-12 columns">
+
+        <div class="part1 hotas">
+          <div class="row">
+            <div class="small-12 columns">
+              <!-- content module -->
+              <a href="#"><img class="BC" src="images/BC-Logo-White-227x95.png"></a>
+              <a href="#"><img class="CUNY" src="images/CUNY-Name-White-122x51.png"></a>
+              <nav class="navWrapper">
+                <ul class="nav n1">
+                  <li class="label"><a href="#">Our Schools</a></li>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">School of Visual, Media, and Performing Arts</a></li>
+                </ul>
+
+                <ul class="nav n2">
+                  <li class="label"><a href="#">Honors Academy</a></li>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Mellon Mays Undergraduate Fellowship</a></li>
+                  <li><a href="#">Link</a></li>
+                </ul>
+
+                <ul class="nav n3">
+                  <li><a href="#">We Stand Against Hate</a></li>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Link</a></li>
+                  <li><a href="#">Link</a></li>
+                </ul>
+              </nav>
 
 
-  <!-- Test setup for understanding what should be inside of what -->
-  <section class="row"></p>
-    <div class="large-2 medium-3 small-12 columns hopas">1 [this is something new that you add into the row]</div>
-    <div class="large-2 medium-3 small-12 columns">2</div>
-    <div class="large-2 medium-3 small-12 columns">3</div>
-    <div class="large-2 medium-3 small-12 columns hopas">4</div>
-    <div class="large-2 medium-3 small-12 columns hopas">5</div>
-    <div class="large-2 medium-3 small-12 columns hopas">6</div>
-  </section> 
+
+            </div>
+          </div>
+        </div>
+
+        <div class="part2 hotas">
+          <div class="row">
+            <div class="small-12 columns">
+
+              <!-- content module -->
+              <p class="address">&copy; <?php print(date("Y")); ?> All Rights Reserved Brooklyn College<br />
+              2900 Bedford Avenue, Brooklyn, NY 11210<br />
+              718.951.5000 
+              <?php
+              $ipAddress = $_SERVER['SERVER_ADDR'];
+              echo "<font color=#D9D9D9>-$ipAddress</font>";
+              ?></p>
+              <ul class="social">
+                <li><a href="#"><img src="images/CUNY-Logo-Gray-77x76.png"></a></li>
+                <li><a href="#"><img src="images/CUNY-Logo-Gray-77x76.png"></a></li>
+                <li><a href="#"><img src="images/CUNY-Logo-Gray-77x76.png"></a></li>
+                <li><a href="#"><img src="images/CUNY-Logo-Gray-77x76.png"></a></li>
+                <li><a href="#"><img src="images/CUNY-Logo-Gray-77x76.png"></a></li>
+              </ul>
+              <ul class="buttons">
+                <li><a href="#">BC WebCentral</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">CUNYfirst</a></li>
+              </ul>
+
+
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+  </footer>
+
+  <div class="mobileSpacer sotas">
+    <div class="row">
+      <div class="small-12 columns"></div>
+    </div>
+  </div>
 
 
 
 
-  <!--  -->
-  <section class="row"><p>stats slider with title labels for stats and why BC</p>
-    <div class="small-3 columns">1</div>
-    <div class="small-3 columns">2</div>
-    <div class="small-3 columns">3</div>
-    <div class="small-3 columns">4</div>
-  </section> 
-
-  <section class="row"><p>Why BC profiles slider</p>
-    <div class="medium-3 small-12 columns hopas">1</div>
-    <div class="medium-3 small-12 columns hopas">2</div>
-    <div class="medium-3 small-12 columns">3</div>
-    <div class="medium-3 small-12 columns hopas">4</div>
-  </section> 
-
-  <section class="row"><p>Connect with BCs not sure when this would need to break to look ok</p>
-    <div class="medium-4 small-12 columns">1</div>
-    <div class="medium-4 small-12 columns">2</div>
-    <div class="medium-4 small-12 columns">3</div>
-  </section> 
-
-  <section class="row"><p>news and Events Slider</p>
-    <div class="medium-3 small-12 columns ">1</div>
-    <div class="medium-3 small-12 columns hopas">2</div>
-    <div class="medium-3 small-12 columns">3</div>
-    <div class="medium-3 small-12 columns ">4</div>
-  </section> 
-
-  <footer class="row gray-11BG"><p>footer with logos and 3 navs</p>
-    <div class="medium-4 small-12 columns hopas">logo desktop</div>
-    <div class="medium-3 small-12 columns ">2</div>
-    <div class="medium-3 small-12 columns">3</div>
-    <div class="medium-2 small-12 columns ">4</div>
-    <div class="small-12 columns sopas">logo mobile</div>
-
-  </footer">
 
 </div>
-
-
-
 
     <!--<div class="row">-->
       
@@ -121,8 +408,36 @@
 
     <!--</div>-->
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
+    
   </body>
 </html>
+
+
+
+
+  <!-- Old 
+  <section class="row"><p>Admissions title, 4 coulmns of links</p>
+    <div class="medium-3 small-12 columns hopas">1</div>
+    <div class="medium-3 small-12 columns">2</div>
+    <div class="medium-3 small-12 columns">3</div>
+    <div class="medium-3 small-12 columns hopas">4</div>
+  </section>
+
+  <section class="row"><p>stats slider with title labels for stats and why BC</p>
+    <div class="small-3 columns">1</div>
+    <div class="small-3 columns">2</div>
+    <div class="small-3 columns">3</div>
+    <div class="small-3 columns">4</div>
+  </section> 
+  <section class="row"><p>Why BC profiles slider</p>
+    <div class="medium-3 small-12 columns hopas">1</div>
+    <div class="medium-3 small-12 columns hopas">2</div>
+    <div class="medium-3 small-12 columns">3</div>
+    <div class="medium-3 small-12 columns hopas">4</div>
+  </section> 
+  <section class="row"><p>Connect with BCs not sure when this would need to break to look ok</p>
+    <div class="medium-4 small-12 columns">1</div>
+    <div class="medium-4 small-12 columns">2</div>
+    <div class="medium-4 small-12 columns">3</div>
+  </section> 
+ -->
