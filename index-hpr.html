@@ -34,7 +34,7 @@
 
 
   <!-- colorbar -->
-  <div class="maroonBG maroonBar">
+  <div class="maroonBG maroonBar hotas">
     <div class="row ">
       <div class="small-12 columns"></div>
     </div>
@@ -59,7 +59,7 @@
             <div class="small-12 columns ">
 
               <!--logo-->
-              <a href="#"><img class="BC" src="images/BC-Logo-Maroon-276x115.png"></a>
+              <a href="#"><img class="BC-hover" src="images/BC-Logo-Gray11-276x116.png"><img class="BC" src="images/BC-Logo-Maroon-276x116.png"></a>
               <!--buttons-->
               <ul class="buttons">
                 <li><a href="#">Apply</a></li>
@@ -67,7 +67,7 @@
                 <li><a href="#">Search</a></li>
               </ul>
               <!--CUNY-->
-              <a href="#"><img class="CUNY" src="images/CUNY-Logo-Gray-77x76.png"></a>
+              <a href="#"><img class="CUNY-hover" src="images/CUNY-Logo-Blue-77x76.png"><img class="CUNY" src="images/CUNY-Logo-Gray-77x76.png"></a>
            
 
               <!--nav-->
@@ -134,6 +134,9 @@
                   <span></span>
                   <!--words-->
                 </a>
+                <a class="searchGlass" href="123"><img src="images/Search-25x24.png" alt="Search"></a>
+                <div class="BC-mobileBar"><a href="234"><img  src="images/BC-Logo-Maroon-276x116.png" alt="Brooklyn College logo"></a></div>
+                <a class="CUNY-mobileBar" href="345"><img src="images/CUNY-Logo-Gray-77x76.png" alt="CUNY logo"></a>
 
                 <nav id="mobile-nav">
 
@@ -183,8 +186,23 @@
                       </ul>
                     </li>
                   </ul>
-                  <h3 class="social">social images</h3>
-                  <h3 class="logo"><a href="#"><img class="CUNYMobile" src="images/CUNY-Name-White-122x51.png"></a></h3>
+                  <ul class="social">
+                    <li class=""><a href="/web/facebook.php"><img src="images/Social-FB-White-54x54.png" alt="Facebook"></a></li>
+                    <li class=""><a href="/web/twitter.php"><img src="images/Social-TW-White-54x54.png" alt="Twitter"></a></li>
+                    <li class=""><a href="/web/instagram.php"><img src="images/Social-IN-White-54x54.png" alt="Instagram"></a></li>
+                    <li class=""><a href="/web/youtube.php"><img src="images/Social-YT-White-54x54.png" alt="YouTube"></a></li>
+                    <li class=""><a href="/web/linkedin.php"><img src="images/Social-LI-White-54x54.png" alt="LinkedIn"></a></li>
+                  </ul>
+                  <ul class="HeaderButtons">
+                    <li class=""><a href="#">Apply</a></li>
+                    <li class=""><a href="#">Give</a></li>
+                  </ul>
+                  <ul class="FooterButtons">
+                    <li class=""><a href="#">BC WebCentral</a></li>
+                    <li class=""><a href="#">Directory</a></li>
+                    <li class=""><a href="#">CUNYfirst</a></li>
+                  </ul>
+                  <!--<h3 class="logo"><a href="#"><img class="CUNYMobile" src="images/CUNY-Name-White-122x51.png"></a></h3>-->
                   
 
                   <!--<h3>2nd nav</h3>
@@ -225,7 +243,7 @@
                       levelTitleAsBack: true,
                       pushContent: '.hpWrapper',
                       labelClose: false,
-                      position: 'right',
+                      position: 'left',
                       levelOpen: 'expand',
                       levelSpacing: '40',
                       navClass: "HPRMN",
@@ -265,7 +283,7 @@
                 <p>Join one of our <a href="#">admissions events</a> to learn more about what we offer.</p>
             </div>
           </div>
-          <div class="slide">
+          <div class="bannerSlide">
             <img class="" src="http://www.brooklyn.cuny.edu/web/com_misc/Slider-01.jpg">
             <div class="textElements">
                 <p>Ready for Grad School?</p>
@@ -302,16 +320,114 @@
     </div>
   </div>
 
+<!-- Row: whyProfiles -->
+<div class="  soas ">
+    <div class="row  ">
+        <div class="large-12 medium-12 small-12 soas columns">
+                    <!-- Slider -->
+        <section class="WhyProfiles slider">
+
+          <div class="element">
+            <img src="http://placehold.it/350x300?text=1">
+          </div>
+
+          <div class="element">
+            <a class="wrapper" href="#"><!-- 1 -->
+
+              <img class="" alt="Why 001" src="http://www.brooklyn.cuny.edu/web/com_misc/Slider-01.jpg">
+
+              <div class="textElements">
+
+                <div class="stf2">
+                  <p>&quot;This is the quote from 001. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&quot;</p>
+                </div>
+
+                <div class="icon"></div>
+              </div>
+
+            </a><!-- 1 -->
+          </div>
+
+
+          <div>
+            <img src="http://placehold.it/350x300?text=2">
+          </div>
+          <div>
+            <img src="http://placehold.it/350x300?text=3">
+          </div>
+          <div>
+            <img src="http://placehold.it/350x300?text=4">
+          </div>
+          <div>
+            <img src="http://placehold.it/350x300?text=5">
+          </div>
+          <div>
+            <img src="http://placehold.it/350x300?text=6">
+          </div>
+          
+
+          
+ 
+        </section>
+        <script type="text/javascript">
+            $(document).on('ready', function() {
+              $(".WhyProfiles").slick({
+                accessibility: true,
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                swipeToSlide: true,
+                autoplay: false,
+                autoplaySpeed: 7000,
+                speed: 1000,
+                fade: false,
+                draggable: true,
+                focusOnSelect: true,
+                mobileFirst: true,
+                pauseOnFocus: true,
+                pauseOnHover: true,
+                respondTo:'window',
+                arrows: true,
+                //prevArrow: 
+                //nextArrow: 
+              });
+            });
+        </script>
+ 
+        </div>
+    </div>
+</div>
+  </div>
+
+
+
   <footer class="full-width soas gray-11BG footer"></p>
     <div class="row">
       <div class="small-12 columns">
 
-        <div class="part1 hotas">
+        <div class="part1 "> <!--hotas-->
           <div class="row">
             <div class="small-12 columns">
               <!-- content module -->
-              <a href="#"><img class="BC" src="images/BC-Logo-White-227x95.png"></a>
-              <a href="#"><img class="CUNY" src="images/CUNY-Name-White-122x51.png"></a>
+
+
+              <div class="logoContact">
+                <a href="#"><img class="BC-hover" src="images/BC-Logo-Gray5-227x95.png"><img class="BC" src="images/BC-Logo-White-227x95.png"></a>
+                
+                <a href="#"><img class="CUNY-hover" src="images/CUNY-Name-Gray5-122x51.png"><img class="CUNY" src="images/CUNY-Name-White-122x51.png"></a>
+                <a href="#"><img class="CUNY-hover-mobile" src="images/CUNY-Name-Gray5-122x51.png"><img class="CUNY-mobile" src="images/CUNY-Name-White-122x51.png"></a>
+                <p class="address">&copy; <?php print(date("Y")); ?> All Rights Reserved Brooklyn College<br />
+                2900 Bedford Avenue, Brooklyn, NY 11210<br />
+                718.951.5000 
+                <?php
+                $ipAddress = $_SERVER['SERVER_ADDR'];
+                echo "<font color=#D9D9D9>-$ipAddress</font>";
+                ?></p>
+
+              </div>
+
+
+
               <nav class="navWrapper">
                 <ul class="nav n1">
                   <li class="label"><a href="#">Our Schools</a></li>
@@ -343,34 +459,20 @@
 
 
 
-            </div>
-          </div>
-        </div>
-
-        <div class="part2 hotas">
-          <div class="row">
-            <div class="small-12 columns">
-
-              <!-- content module -->
-              <p class="address">&copy; <?php print(date("Y")); ?> All Rights Reserved Brooklyn College<br />
-              2900 Bedford Avenue, Brooklyn, NY 11210<br />
-              718.951.5000 
-              <?php
-              $ipAddress = $_SERVER['SERVER_ADDR'];
-              echo "<font color=#D9D9D9>-$ipAddress</font>";
-              ?></p>
-              <ul class="social">
-                <li><a href="#"><img src="images/CUNY-Logo-Gray-77x76.png"></a></li>
-                <li><a href="#"><img src="images/CUNY-Logo-Gray-77x76.png"></a></li>
-                <li><a href="#"><img src="images/CUNY-Logo-Gray-77x76.png"></a></li>
-                <li><a href="#"><img src="images/CUNY-Logo-Gray-77x76.png"></a></li>
-                <li><a href="#"><img src="images/CUNY-Logo-Gray-77x76.png"></a></li>
-              </ul>
-              <ul class="buttons">
-                <li><a href="#">BC WebCentral</a></li>
-                <li><a href="#">Directory</a></li>
-                <li><a href="#">CUNYfirst</a></li>
-              </ul>
+              <div class="socialButtons">
+                <ul class="social">
+                  <li><a href="#"><img src="images/CUNY-Logo-Gray-77x76.png"></a></li>
+                  <li><a href="#"><img src="images/CUNY-Logo-Gray-77x76.png"></a></li>
+                  <li><a href="#"><img src="images/CUNY-Logo-Gray-77x76.png"></a></li>
+                  <li><a href="#"><img src="images/CUNY-Logo-Gray-77x76.png"></a></li>
+                  <li><a href="#"><img src="images/CUNY-Logo-Gray-77x76.png"></a></li>
+                </ul>
+                <ul class="buttons">
+                  <li><a href="#">BC WebCentral</a></li>
+                  <li><a href="#">Directory</a></li>
+                  <li><a href="#">CUNYfirst</a></li>
+                </ul>
+              </div>
 
 
 

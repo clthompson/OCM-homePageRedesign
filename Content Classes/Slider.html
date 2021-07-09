@@ -1,0 +1,29 @@
+        <!-- Slider -->
+        <section class="<%stf_sliderName%> slider">
+          <%con_slides%>
+        </section>
+        <script type="text/javascript">
+            $(document).on('ready', function() {
+              $(".<%stf_sliderName%>").slick({
+                accessibility: true,
+                infinite: true,
+                slidesToShow: <%stf_slidesToShow%>,
+                slidesToScroll: <%stf_slidesToScroll%>,
+                swipeToSlide: true,
+                autoplay: <%opt_autoPlay%>,
+                autoplaySpeed: <%stf_slideDuration%>,
+                speed: <%stf_transitionDuration%>,
+                fade: false,
+                draggable: true,
+                focusOnSelect: true,
+                mobileFirst: true,
+                pauseOnFocus: true,
+                pauseOnHover: true,
+                respondTo:'window',
+                arrows: true,
+                //prevArrow: 
+                //nextArrow: 
+              });
+            });
+        </script>
+ 

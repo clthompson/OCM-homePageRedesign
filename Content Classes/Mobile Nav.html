@@ -1,0 +1,53 @@
+<!--all-->
+              <div class="wrapper cf">
+                <a class="toggle" href="#">
+                  <span></span>
+                </a>
+                <a class="searchGlass" href="<%anc_search%>"><img src="<%img_search%>" alt="Search"></a>
+                <div class="BC-mobileBar"><a href="<%anc_BCLogo%>"><img src="<%img_BCMobileBar%>" alt="Brooklyn College logo"></a></div>
+                <a class="CUNY-mobileBar" href="<%anc_CUNY%>"><img src="<%img_CUNYMobileBar%>" alt="CUNY logo"></a>
+
+                <nav id="mobile-nav">
+                  <h3 class="logo"><a href="<%anc_BCLogo%>"><img class="BCMobile" src="<%img_BCLogo%>" alt="Brooklyn College logo"></a></h3>
+                  <ul class="first-nav">
+                    <%con_nav%>
+                  </ul>
+                  <ul class="social">
+                    <%con_social%>
+                  </ul>
+
+                  <ul class="HeaderButtons">
+                    <%con_headerButtons%>
+                  </ul>
+                  <ul class="FooterButtons">
+                    <%con_FooterButtons%>
+                  </ul>
+                  <!--<h3 class="logo"><a href="<%anc_CUNY%>"><img class="CUNYMobile" src="<%img_CUNYLogo%>" alt="CUNY logo"></a></h3>-->
+                  
+                </nav>
+                
+                <script>
+                  (function($) {
+                    'use strict';
+                    // call our plugin
+                    var Nav = new hcOffcanvasNav('#mobile-nav', {
+                      width: 350,
+                      disableAt: false,
+                      customToggle: '.toggle',
+                      levelSpacing: 40,
+                      navTitle: 'Close', //can be an image
+                      levelTitles: true,
+                      levelTitleAsBack: true,
+                      pushContent: '.hpWrapper',
+                      labelClose: false,
+                      position: 'left',
+                      levelOpen: 'expand',
+                      levelSpacing: '40',
+                      navClass: "HPRMN",
+                      rtl: false,
+                      ariaLabels: {open: 'Open Menu', close: 'Close Menu', submenu: 'Submenu'},
+                    });
+                  })(jQuery);
+                </script>
+              </div>
+ 

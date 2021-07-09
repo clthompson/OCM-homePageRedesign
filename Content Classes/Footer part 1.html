@@ -1,0 +1,38 @@
+              <!-- content module -->
+              <div class="logoContact">
+              <a href="<%anc_BCLogo%>"><img class="BC-hover" src="<%img_BCLogoHover%>" alt="Brooklyn College logo"><img class="BC" src="<%img_BCLogo%>" alt="Brooklyn College logo"></a>
+
+              <a href="<%anc_CUNYLogo%>"><img class="CUNY-hover" src="<%img_CUNYLogoHover%>" alt="CUNY logo"><img class="CUNY" src="<%img_CUNYLogo%>" alt="CUNY logo"></a>
+              <a href="<%anc_CUNYLogo%>"><img class="CUNY-hover-mobile" src="<%img_CUNYLogoHover%>" alt="CUNY logo"><img class="CUNY-mobile" src="<%img_CUNYLogo%>" alt="CUNY logo"></a>
+
+              <p class="address">&copy; <?php print(date("Y")); ?> All Rights Reserved Brooklyn College<br />
+                2900 Bedford Avenue, Brooklyn, NY 11210<br />
+                718.951.5000 
+                <?php
+                $ipAddress = $_SERVER['SERVER_ADDR'];
+                echo "<font color=#54565a>-$ipAddress</font>";
+                ?></p>
+              </div>
+
+
+              <nav class="navWrapper">
+                <ul class="nav n1">
+                  <%con_nav1%>
+                </ul>
+                <ul class="nav n2">
+                  <%con_nav2%>
+                </ul>
+                <ul class="nav n3">
+                  <%con_nav3%>
+                </ul>
+              </nav>
+
+              <div class="socialButtons">
+                <ul class="social">
+                  <%con_social%>
+                </ul>
+                <ul class="buttons">
+                  <%con_buttons%>
+                </ul>
+              </div>
+ 
