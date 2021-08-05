@@ -7,10 +7,12 @@ $yellow-lighter: #F0CE46;
 $white: #fff;
 
 //$gray-light: ;
-$gray-med: #D9D9D9;
+$gray-med: #D9D9D9; //cool gray 1
 $gray-05: #AEB2B5;
 $gray-10: #636569;
 $gray-11: #54565a;
+$gray-SL: #f7f7f9;
+$gray-ML: #ebedec;
 $black-35: #232323;
 
 // Line Weights
@@ -18,6 +20,7 @@ $OnePX: 1px solid;
 $TwoPX: 2px solid;
 $ThreePX: 3px solid;
 $FourPX: 4px solid;
+$FivePX: 5px solid;
 
 // Breaks for visibility
 // $small-breakpoint:  em-calc(600);
@@ -86,6 +89,8 @@ header {height: 181px;}
 .gray-medBG {background-color: $gray-med;}
 .gray-10BG {background-color: $gray-10;}
 .gray-11BG {background-color: $gray-11;}
+.gray-SL {background-color: $gray-SL;}
+.gray-ML {background-color: $gray-ML;}
 .white {background-color: $white;}
 
 // Hiding
@@ -134,8 +139,7 @@ header {height: 181px;}
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////
-/* Slider */
-
+/* Slider General */
 
 // Slick
 .slick-slider {
@@ -275,38 +279,938 @@ header {height: 181px;}
   right: 0px;
 }
 
-// Slides
-.banner {
-  .element {
-    position: relative;
-    img {
+///////////////////////////////////////////////////////////////////////////////////////////
+
+// Labels
+.rowLabel {
+  text-align: center;
+  background-color: $white;
+  //height: 77px;
+  @media only screen and (max-width: $tabletS) {
+    text-align: left;
+    //padding: 0 78px 0 78px;
+  }
+  @media only screen and (max-width: $phoneS) {
+    text-align: center;
+  }
+  
+  .prospectiveLabel {
+    background-color: $gray-med;
+    @media only screen and (max-width: $tabletS) {
+      padding: 0 78px 0 78px;
+      margin: 32px 0 0 0;
+      background-color: $gray-ML;
     }
-    .textElements {
-      z-index: 200;
-      background-color: $maroon-80;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      padding: 5px 5px 5px 5px;
-      p {
-        color: $white;
-        a {
-          //color: $yellow;
-          color: $white; //testing
-          background-color: $yellow; //testing
-          &:hover { //this setup fails ADA
+    @media only screen and (max-width: $phoneS) {
+      margin: 20px 0 0 0;
+    }
+    h2 {
+      //text-align: center;
+      font-family: $comeniaR;
+      font-size: 23px;
+      line-height: 58px;
+      letter-spacing: 5.5px;
+      text-transform: uppercase;
+      color: $black;
+      margin: 0;
+      padding: 5px 0 14px 0;
+      @media only screen and (max-width: $tabletS) {
+        //text-align: left;
+        line-height: 43px;
+      }
+      @media only screen and (max-width: $phoneS) {
+        //text-align: center;
+        line-height: 33px;
+        font-size: 22px;
+        padding: 5px 0 5px 0;
+      }
+    }
+  }
+
+  .byTheNumbersLabel {
+    @media only screen and (max-width: $tabletS) {
+      margin: 57px 0 0 0;
+      height: 43px;
+      padding: 0 78px 0 78px;
+    }
+    @media only screen and (max-width: $phoneS) {
+      margin: 39px 0 0 0;
+      height: 33px;
+    }
+    h2 {
+      //text-align: center;
+      font-family: $comeniaR;
+      font-size: 23px;
+      line-height: 77px;
+      letter-spacing: 5.5px;
+      text-transform: uppercase;
+      color: $black;
+      margin: 0;
+      padding: 0 0 0 0;
+      @media only screen and (max-width: $tabletS) {
+        //text-align: left;
+        line-height: 43px;
+      }
+      @media only screen and (max-width: $phoneS) {
+        //text-align: center;
+        line-height: 33px;
+        font-size: 22px;
+      }
+    }
+  }
+
+  .whyProfilesLabel {
+    @media only screen and (max-width: $tabletS) {
+      margin: 57px 0 0 0;
+      height: 43px;
+      padding: 0 78px 0 78px;
+    }
+    @media only screen and (max-width: $phoneS) {
+      margin: 39px 0 0 0;
+      height: 33px;
+    }
+    h2 {
+      //text-align: center;
+      font-family: $comeniaR;
+      font-size: 23px;
+      line-height: 77px;
+      letter-spacing: 5.5px;
+      text-transform: uppercase;
+      color: $black;
+      margin: 0;
+      padding: 0 0 0 0;
+      @media only screen and (max-width: $tabletS) {
+        //text-align: left;
+        line-height: 43px;
+      }
+      @media only screen and (max-width: $phoneS) {
+        //text-align: center;
+        line-height: 33px;
+        font-size: 22px;
+      }
+    }
+  }
+  .newsLabel {
+    height: 77px;
+    @media only screen and (max-width: $tabletS) {
+      height: 43px;
+      padding: 0 78px 0 78px;
+    }
+    @media only screen and (max-width: $phoneS) {
+      height: 33px;
+    }
+    h2 {
+      //text-align: center;
+      font-family: $comeniaR;
+      font-size: 23px;
+      line-height: 77px;
+      letter-spacing: 5.5px;
+      text-transform: uppercase;
+      color: $black;
+      margin: 0;
+      padding: 0 0 0 0;
+      @media only screen and (max-width: $tabletS) {
+        //text-align: left;
+        line-height: 43px;
+      }
+      @media only screen and (max-width: $phoneS) {
+        //text-align: center;
+        line-height: 33px;
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////
+// Content Rows 
+
+// banner
+.contentRow {
+  .banner {
+    .slick-prev, .slick-next {
+      top: 50%;
+      height: 62px;
+      width: 62px;
+      background-color: $gray-med;
+      display: block;
+      font-family: $comeniaB;
+      line-height: 54px;
+      &:hover, &:focus {
+        outline: none;
+        background-color: $maroon;
+        color: transparent;
+        &:before {
+          opacity: 1;
+          color: $white; 
+        }
+      }
+      @media only screen and (max-width: $tabletS) {
+        //top: -22px;
+        //color: $gray-med;;
+        &:hover, &:focus {
+          background: none;
+          color: $white;
+          &:before {
+            color: $white; 
+          }
+        }
+      }
+      @media only screen and (max-width: $phoneS) {
+        //top: -20px;
+      }
+    }
+    .slick-prev {
+      &:before {
+        content: '<'; // ←
+        color: $gray-11;
+        opacity: 1;
+        padding: 0;
+        font-size: 60px;
+        @media only screen and (max-width: $tabletS) {
+          color: $gray-05;
+          font-size: 45px;
+        }
+      }
+      @media only screen and (max-width: $tabletS) {
+        background: none;
+        //top: -35px;
+        //position: absolute;
+        //right: 120px;
+        //left: auto;
+        //background-color: $white;
+        //padding: 21px;
+      }
+      @media only screen and (max-width: $phoneS) {
+        //right: 48px;
+      }
+    }
+    .slick-next {
+      &:before {
+        content: '>'; // →
+        color: $gray-11;
+        opacity: 1;
+        padding: 0;
+        font-size: 60px;
+        @media only screen and (max-width: $tabletS) {
+          color: $gray-05;
+          font-size: 45px;
+        }
+      }
+      @media only screen and (max-width: $tabletS) {
+        background: none;
+        //top: -15px;
+        //right: 71px;
+      }
+      @media only screen and (max-width: $phoneS) {
+        //right: 0px;
+      }
+    }
+    .element {
+      position: relative;
+      img {
+        //display: block;
+        @media only screen and (max-width: $phoneS) {
+          //width: 885px;
+          min-height: 500px;
+          position: relative;
+          //overflow: hidden;
+          //width: auto;
+          //height: auto;
+          object-fit: cover;
+          &.left {
+            object-position: left;
+          }
+          &.right {
+            object-position: right;
+          }
+        }
+      }
+      .textElements {
+        z-index: 200;
+        background-color: $maroon-80;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding: 22px 40px 22px 70px;
+        @media only screen and (max-width: $tabletS) {
+          background: none;
+          padding: 0px 0px 20px 78px;
+        }
+        @media only screen and (max-width: $phoneS) {
+          background: none;
+          padding: 0px 0px 20px 30px;
+        }
+
+        .text1 {
+          h2 { // Title
             color: $white;
-            background-color: $yellow; 
+            font-family: $comeniaB;
+            font-size: 30px;
+            text-transform: uppercase;
+            line-height: 28px;
+            padding: 0;
+            margin: 0;
+            @media only screen and (max-width: $tabletS) {
+              font-size: 22px;
+              line-height: 22px;
+            }
+          }
+        }
+        .text2 { // HTML description
+          @media only screen and (max-width: $tabletS) {
+            display: none;
+          }
+          p {
+            font-family: $comeniaR;
+            color: $white;
+            font-size: 30px;
+            line-height: 28px;
+            padding: 8px 0 0 0;
+            margin: 0;
+            a {
+              color: $yellow;
+              text-decoration: none;
+              padding: 3px 3px 3px 3px;                
+              &:hover, &:focus {
+                color: $maroon;
+                background-color: $yellow;
+                //padding: 3px 3px 3px 3px;
+              }
+            }
+          }
+        }
+        .text3 { // CTA
+          display: none;
+          @media only screen and (max-width: $tabletS) {
+            display: block;
+          }
+          p {
+            a {
+              color: $white;
+              font-family: $comeniaB;
+              font-size: 13px;
+              line-height: 13px;
+              letter-spacing: 1px;
+              text-transform: uppercase;
+              text-decoration: none;
+              background-color: $maroon;
+              padding: 13px 36px 13px 36px;
+              border-radius: 7px;
+              //margin: 15px 0 0 0;
+              &:hover, &:focus {
+                color: $maroon;
+                background-color: $yellow;
+              }
+            }
+          }
+        }
+        .stf2 { // STF description
+          display: none;
+          @media only screen and (max-width: $tabletS) {
+            display: block;
+          }
+          p {
+            font-family: $comeniaR;
+            color: $white;
+            font-size: 30px;
+            line-height: 28px;
+            padding: 8px 0 15px 0;
+            margin: 0;
+            @media only screen and (max-width: $tabletS) {
+              font-size: 16px;
+              line-height: 16px;
+            }
           }
         }
       }
     }
+  }
+
+  // prospective
+  .prospective {
+    background-color: $gray-med;
+    @media only screen and (max-width: $tabletS) {
+      padding: 0 78px 0 27px;
+      background-color: $gray-ML;
+    }
+    @media only screen and (max-width: $phoneS) {
+      padding: 0;
+    }
+    .element {
+      text-align: center;
+      @media only screen and (max-width: $tabletS) {
+        text-align: left;
+        padding: 0 0 20px 51px;
+        //width: 22%;
+      }
+      @media only screen and (max-width: $phoneS) {
+        padding: 0 0 6px 0px;
+      }
+      .text3 {
+        padding: 10px 0 10px 0;
+        @media only screen and (max-width: $tabletS) {
+          background-color: $gray-05;
+          padding: 5px 8px 5px 17px;
+          margin: 0 0px 9px 0px;
+        }
+        p {
+          margin: 0;
+          padding: 0;
+          a {
+            color: $gray-11;
+            font-family: $comeniaB;
+            font-size: 25px;
+            text-transform: uppercase;
+            text-decoration: none;
+            &:hover, &:focus {
+              color: $maroon;
+            }
+            @media only screen and (max-width: $tabletS) {
+              font-size: 19px;
+              color: $white;
+              width: 100%;
+              letter-spacing: 3px;
+              &:hover, &:focus {
+                color: $white;
+              }
+              
+              //padding: 5px 40px 5px 5px;
+              //background-color: $gray-05;
+
+            }
+          }
+        }
+      }
+      .icon {
+        @media only screen and (max-width: $tabletS) {
+          &:before {
+            content: '>'; // ←
+            font-family: $comeniaB;
+            font-size: 25px;
+            color: $gray-11;
+            opacity: 1;
+            //padding: 12px;
+            position: absolute;
+            color: $white;
+            top: 0;
+            right: 10px;
+            //transform:scale(1,2);
+          }
+        }
+      }
+    }
+  }
+
+  // byTheNumbers
+  .byTheNumbers {
+    height: 250px;
+    background-color: $gray-SL;
+    @media only screen and (max-width: $tabletS) {
+      height: 170px;
+      //background-color: $white;
+    }
+    @media only screen and (max-width: $phoneS) {
+      height: 162px;
+    }
+    .slick-prev, .slick-next {
+      top: 219px;
+      height: 40px;
+      width: 40px;
+      background-color: $gray-med;
+      display: block;
+      font-family: $comeniaB;
+      line-height: 38px;
+      &:hover, &:focus {
+        outline: none;
+        background-color: $maroon;
+        color: transparent;
+        &:before {
+          opacity: 1;
+          color: $white; 
+        }
+      }
+      @media only screen and (max-width: $tabletS) {
+        //top: -22px;
+        &:hover, &:focus {
+          background: none;
+          color: $maroon;
+          &:before {
+            color: $maroon; 
+          }
+        }
+      }
+      @media only screen and (max-width: $phoneS) {
+        top: -19px;
+      }
+    }
+    .slick-prev {
+      &:before {
+        content: '<'; // ←
+        color: $gray-11;
+        opacity: 1;
+        padding: 12px;
+        font-size: 32px;
+      }
+      @media only screen and (max-width: $tabletS) {
+        top: -20px;
+        position: absolute;
+        right: 100px;
+        left: auto;
+        background: none;
+        //padding: 21px;
+      }
+      @media only screen and (max-width: $phoneS) {
+        right: 30px;
+      }
+    }
+    .slick-next {
+      &:before {
+        content: '>'; // →
+        color: $gray-11;
+        opacity: 1;
+        padding: 12px;
+        font-size: 32px;
+      }
+      @media only screen and (max-width: $tabletS) {
+        background: none;
+        top: -20px;
+        right: 71px;
+      }
+      @media only screen and (max-width: $phoneS) {
+        right: 0px;
+      }
+    }
+    .ByTheNumbers {
+      @media only screen and (max-width: $tabletS) {
+        padding: 0 53px 0 53px;
+      }
+      @media only screen and (max-width: $phoneS) {
+        padding: 0 10px 0 10px;
+      }
+    }
+
+    .element {
+      background-color: $white;
+      margin: 0;
+      padding: 0;
+      border-top: $FivePX $gray-med;
+      border-bottom: $FivePX $gray-med;
+      border-right: $ThreePX $gray-med;
+      border-left: $ThreePX $gray-med;
+      height: 250px;
+      @media only screen and (max-width: $tabletS) {
+        height: 150px;
+        border: 1px solid $gray-05;
+        margin: 9px 25px 9px 25px;
+      }
+      @media only screen and (max-width: $phoneS) {
+        height: 162px;
+        margin: 9px 0 9px 0;
+      }
+      a {
+        text-decoration: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        &:hover {
+          background-color: $gray-med;
+        }
+        .textElements {
+          display: table;
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          &.typeOne {
+            .text1 {
+              width: 45%;
+              @media only screen and (max-width: $tabletS) {
+                width: 50%;
+              }
+            }
+            .text2 { 
+              width: 55%; 
+              @media only screen and (max-width: $tabletS) {
+                width: 50%;
+              }
+            }
+          }
+          &.typeTwo {
+            .text1 { 
+              width: 62%; 
+              @media only screen and (max-width: $tabletS) {
+                width: 50%;
+              }
+            }
+            .text2 { 
+              width: 38%; 
+              @media only screen and (max-width: $tabletS) {
+                width: 50%;
+              }
+            }
+          }
+          .text1 {
+            //width: 40%;
+            display: table-cell;
+            vertical-align: middle;
+            //border: $OnePX $yellow;
+            //position: absolute;
+            //left: 20px;
+            //top: 30px;
+            margin: 0;
+            padding: 0 0 0 5px;
+            p {
+              text-align: center;
+              font-family: $comeniaB;
+              text-transform: uppercase;
+              margin: 0;
+              padding: 0;
+              .bigNumber {
+                color: $maroon;
+                font-size: calc(150px + (210 – 150) * ((25vw – 1024px) / ( 1400 – 1024)) );  //210px
+                line-height: 150px;
+                padding: 0 0 0 7%;
+                @media only screen and (max-width: $tabletS) {
+                  font-size: 120px;
+                }
+              }
+              .smallerNumber {
+                color: $maroon;
+                font-size: calc(84px + (155 – 84) * ((25vw – 1024px) / ( 1400 – 1024)) ); //155
+                line-height: 100px;
+                letter-spacing: -10px;
+                @media only screen and (max-width: $tabletS) {
+                  letter-spacing: -2px;
+                }
+              }
+              .smallerStillNumber {
+                color: $maroon;
+                font-size: calc(82px + (125 – 82) * ((25vw – 1024px) / ( 1400 – 1024)) ); //125
+                line-height: calc(63px + (90 – 63) * ((25vw – 1024px) / ( 1400 – 1024)) ); //90
+                letter-spacing: -7px;
+                @media only screen and (max-width: $tabletS) {
+                  letter-spacing: -5px;
+                }
+              }
+              .textOne {
+                color: $maroon;
+                font-size: 51px;
+                line-height: 50px;
+                @media only screen and (max-width: $tabletS) {
+                  font-size: 49px;
+                  line-height: 47px;
+                }
+              }
+              .textTwo {
+                color: $maroon;
+                font-size: 45px;
+                line-height: 33px;
+                @media only screen and (max-width: $tabletS) {
+                  font-size: 43px;
+                  line-height: 29px;
+                }
+              }
+              .textThree {
+                color: $gray-10;
+                font-size: 29px;
+                line-height: 24px;
+                @media only screen and (max-width: $tabletS) {
+                  font-size: 28px;
+                  line-height: 22px;
+                }
+              }
+              .textFour {
+                color: $maroon;
+                font-size: 46px;
+                line-height: 30px;
+                @media only screen and (max-width: $tabletS) {
+                  font-size: 44px;
+                  line-height: 28px;
+                }
+              }
+              .textFive {
+                color: $maroon;
+                font-size: calc(22px + (35 – 22) * ((25vw – 1024px) / ( 1400 – 1024)) ); //35
+                line-height: calc(24px + (46 – 24) * ((25vw – 1024px) / ( 1400 – 1024)) ); //46
+                letter-spacing: -1px;
+              }
+            }
+          }
+          .text2 {
+            //width: 60%;
+            display: table-cell;
+            vertical-align: middle;
+            //border: $OnePX $yellow;
+            //position: absolute;
+            //right: 20px;
+            //top: 30px;
+            margin: 0 0 0 0;
+            padding: 0 9px 0 9px;
+            //width: 165px;
+            p {
+              float: right;
+              margin: 0;
+              padding: 0;
+              font-family: $comeniaB;
+              color: $black;
+              font-size: calc(16px + (23 – 16) * ((25vw – 1024px) / ( 1400 – 1024)) ); // 24px
+              line-height: calc(20px + (30 – 20) * ((25vw – 1024px) / ( 1400 – 1024)) ); //30
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .whyProfiles {
+
+    .slick-prev, .slick-next {
+      top: 50%;
+      height: 40px;
+      width: 40px;
+      background-color: $gray-med;
+      display: block;
+      font-family: $comeniaB;
+      line-height: 38px;
+      &:hover, &:focus {
+        outline: none;
+        background-color: $maroon;
+        color: transparent;
+        &:before {
+          opacity: 1;
+          color: $white; 
+        }
+      }
+      @media only screen and (max-width: $tabletS) {
+        //top: -22px;
+        &:hover, &:focus {
+          background: none;
+          color: $maroon;
+          &:before {
+            color: $maroon; 
+          }
+        }
+      }
+      @media only screen and (max-width: $phoneS) {
+        top: -19px;
+      }
+    }
+    .slick-prev {
+      &:before {
+        content: '<'; // ←
+        color: $gray-11;
+        opacity: 1;
+        padding: 12px;
+        font-size: 32px;
+      }
+      @media only screen and (max-width: $tabletS) {
+        top: -20px;
+        position: absolute;
+        right: 100px;
+        left: auto;
+        background: none;
+        //padding: 21px;
+      }
+      @media only screen and (max-width: $phoneS) {
+        right: 30px;
+      }
+    }
+    .slick-next {
+      &:before {
+        content: '>'; // →
+        color: $gray-11;
+        opacity: 1;
+        padding: 12px;
+        font-size: 32px;
+      }
+      @media only screen and (max-width: $tabletS) {
+        background: none;
+        top: -20px;
+        right: 71px;
+      }
+      @media only screen and (max-width: $phoneS) {
+        right: 0px;
+      }
+    }
+
+    .WhyProfiles {
+      @media only screen and (max-width: $tabletS) {
+        padding: 0 53px 0 53px;
+      }
+      @media only screen and (max-width: $phoneS) {
+        padding: 0 10px 0 10px;
+      }
+    }
+
+    .element {
+      position: relative;
+      @media only screen and (max-width: $tabletS) {
+        margin: 0 25px 0 25px;
+      }
+      @media only screen and (max-width: $phoneS) {
+        margin: 0;
+      }
+      img {
+        //border: 1px solid red;
+        //display: block;
+        //width: 885px;
+        min-height: 512px;
+        position: relative;
+        //overflow: hidden;
+        //width: auto;
+        //height: auto;
+        object-fit: cover;
+        &.left {
+          object-position: left;
+        }
+        &.right {
+          object-position: right;
+        }
+        @media only screen and (max-width: $tabletS) {
+          border-radius: 10px 10px 0 0;
+          //min-height: 384px;
+          min-height: calc(200px + (400 – 200) * ((25vw – 768px) / ( 1024 – 768)) ); //35
+        }
+      }
+      .textElements {
+        background: rgba(0, 0, 0, 0.5);
+        //opacity: 0.5;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        padding: 20px 95px 15px 30px;
+        @media only screen and (max-width: $tabletS) {
+          padding: 15px 15px 54px 15px;
+        }
+        .stf2 {
+          p {
+             font-family: $comeniaR;
+             font-size: 22px;
+             line-height: 25px;
+             color: $white;
+             text-decoration: none;
+             padding: 0;
+             margin: 0;
+             @media only screen and (max-width: $tabletS) {
+              font-size: 15px;
+              line-height: 20px;
+             }
+          }
+        }
+        .icon {
+          position: absolute;
+          width: 42px;
+          height: 42px;
+          background-image: url("/web/com_misc/Social-YT-White-54x54.png");
+          background-size: 42px 42px;
+          right: 15px;
+          top: 43%;
+          border-radius: 21px;
+          filter: brightness(0.8);
+          @media only screen and (max-width: $tabletS) {
+            width: 34px;
+            height: 34px;
+            background-size: 34px 34px;
+            right: 10px;
+            top: auto;
+            bottom: 10px;
+          }
+        }
+      }
+    }
+
+  }
+
+  .news {
+
+
+    .slick-prev, .slick-next {
+      top: 50%;
+      height: 40px;
+      width: 40px;
+      background-color: $gray-med;
+      display: block;
+      font-family: $comeniaB;
+      line-height: 38px;
+      &:hover, &:focus {
+        outline: none;
+        background-color: $maroon;
+        color: transparent;
+        &:before {
+          opacity: 1;
+          color: $white; 
+        }
+      }
+      @media only screen and (max-width: $tabletS) {
+        //top: -22px;
+        &:hover, &:focus {
+          background: none;
+          color: $maroon;
+          &:before {
+            color: $maroon; 
+          }
+        }
+      }
+      @media only screen and (max-width: $phoneS) {
+        top: -19px;
+      }
+    }
+    .slick-prev {
+      &:before {
+        content: '<'; // ←
+        color: $gray-11;
+        opacity: 1;
+        padding: 12px;
+        font-size: 32px;
+      }
+      @media only screen and (max-width: $tabletS) {
+        top: -20px;
+        position: absolute;
+        right: 100px;
+        left: auto;
+        background: none;
+        //padding: 21px;
+      }
+      @media only screen and (max-width: $phoneS) {
+        right: 30px;
+      }
+    }
+    .slick-next {
+      &:before {
+        content: '>'; // →
+        color: $gray-11;
+        opacity: 1;
+        padding: 12px;
+        font-size: 32px;
+      }
+      @media only screen and (max-width: $tabletS) {
+        background: none;
+        top: -20px;
+        right: 71px;
+      }
+      @media only screen and (max-width: $phoneS) {
+        right: 0px;
+      }
+    }
+
+    .element {
+
+    }
+
   }
 }
 
 
 
 
+///////////////////////////////////////////////////////////////////////////////////////////
+// CTAs
+
+.ctas {
+
+}
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////
@@ -718,99 +1622,99 @@ header {
 // Footer
 
 footer {
-.part1 {
-  height: 413px;
-  //border: 1px solid $black;
-  position: relative;
-  @media screen and (max-width: 1024px) {
-    height: 820px;
-  }
-  @media screen and (max-width: 767px) {
-    height: 500px;
-  }
-.logoContact {
-  .BC, .BC-hover {
-    position: absolute;
-    left: 70px;
-    top: 27px;
+  .part1 {
+    height: 413px;
+    //border: 1px solid $black;
+    position: relative;
     @media screen and (max-width: 1024px) {
-      left: 78px;
-      top: 44px;
-      width: 203px;
-      height: 85px;
+      height: 820px;
     }
     @media screen and (max-width: 767px) {
-      left: 15px;
-      top: 22px;
-      width: 153px;
-      height: 64px;
+      height: 500px;
     }
-  }
-  .BC:hover {
-    opacity: 0;
-  }
+  .logoContact {
+    .BC, .BC-hover {
+      position: absolute;
+      left: 70px;
+      top: 27px;
+      @media screen and (max-width: 1024px) {
+        left: 78px;
+        top: 44px;
+        width: 203px;
+        height: 85px;
+      }
+      @media screen and (max-width: 767px) {
+        left: 15px;
+        top: 22px;
+        width: 153px;
+        height: 64px;
+      }
+    }
+    .BC:hover {
+      opacity: 0;
+    }
 
-  .CUNY, .CUNY-hover {
-    position: absolute;
-    left: 173px;
-    top: 140px;
-    @media screen and (max-width: 1024px) {
-      left: 171px;
-      top: 145px;
-      width: 112px;
-      height: 47px;
+    .CUNY, .CUNY-hover {
+      position: absolute;
+      left: 173px;
+      top: 140px;
+      @media screen and (max-width: 1024px) {
+        left: 171px;
+        top: 145px;
+        width: 112px;
+        height: 47px;
+      }
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
     }
-    @media screen and (max-width: 767px) {
+    .CUNY:hover {
+      opacity: 0;
+    }
+
+    .CUNY-mobile, .CUNY-hover-mobile {
       display: none;
+      position: absolute;
+      right: 15px;
+      top: 22px;
+      width: 97px;
+      height: 41px;
+      @media screen and (max-width: 767px) {
+        display: block;
+      }
     }
-  }
-  .CUNY:hover {
-    opacity: 0;
-  }
 
-  .CUNY-mobile, .CUNY-hover-mobile {
-    display: none;
-    position: absolute;
-    right: 15px;
-    top: 22px;
-    width: 97px;
-    height: 41px;
-    @media screen and (max-width: 767px) {
-      display: block;
+    .address {
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      left: 174px;
+      top: 290px;
+      font-size: 14px;
+      line-height: 27px;
+      font-family: $comeniaR;
+      color: $white;
+      letter-spacing: .2px;
+      @media screen and (max-width: 1200px) {
+        //left: 78px;
+        //top: 231px;
+        top: 230px;
+        line-height: 19px;
+        font-size: 12.5px;
+      }
+      @media screen and (max-width: 1100px) {
+        //top: 230px;
+      }
+      @media screen and (max-width: 1024px) {
+        left: 78px;
+        top: 231px;
+      }
+      @media screen and (max-width: 767px) {
+        left: 15px;
+        top: 104px;
+      }
     }
-  }
-
-  .address {
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    left: 174px;
-    top: 290px;
-    font-size: 14px;
-    line-height: 27px;
-    font-family: $comeniaR;
-    color: $white;
-    letter-spacing: .2px;
-    @media screen and (max-width: 1200px) {
-      //left: 78px;
-      //top: 231px;
-      top: 230px;
-      line-height: 19px;
-      font-size: 12.5px;
-    }
-    @media screen and (max-width: 1100px) {
-      //top: 230px;
-    }
-    @media screen and (max-width: 1024px) {
-      left: 78px;
-      top: 231px;
-    }
-    @media screen and (max-width: 767px) {
-      left: 15px;
-      top: 104px;
-    }
-  }
-} // logoContact
+  } // logoContact
 
 
 nav.navWrapper {
