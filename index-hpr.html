@@ -951,7 +951,71 @@
 
 
 
+
+
+
+<div id="CTA-AuA" style="width: 200px; height: 200px; background-color: #000;"></div>
+
+
+
+<script>
+  $(document).ready(function(){ 
+    $("#CTA-AuA").click(function(){ 
+      var sw = $(window).width();
+      var sh = $(window).height();
+      console.log("SW = "+sw);
+      console.log("SH = "+sh);
+      if (sw < 600 || sh < 800) {
+        window.location = "http://www.brooklyn.cuny.edu/web/academics.php";
+      } else {
+        $(".AskUsAnything .element").toggle(250);
+      };
+    }); 
+  });
+</script>
     
+
+    <div class="  soas AskUsAnything">
+    <div class="row  ">
+        <div class="large-12 medium-12 small-12 soas columns">
+            <div class="element  large-12 medium-12 small-12 soas columns" id="AuAForm">
+    
+
+        
+
+        <div class="textElements ">
+            <div class="text1">
+              <h2>Ask Us Anything</h2>
+<p>X</p>
+            </div>
+
+            <div class="stf1">
+              <p>Send us a note and we will get in touch.</p>
+            </div>
+
+            <div class="text2">
+              <iframe width="100%" height="600" title="Ask Us Anything" src="https://BrooklynCollege.formstack.com/forms/ask_us_anything"></iframe>
+            </div>
+
+            
+
+            
+
+            
+         </div>
+
+         <script>$(document).ready(function(){ 
+ $(".AskUsAnything .element .text1 p").click(function(){ 
+ $(".AskUsAnything .element").toggle(250); 
+ }); 
+ });</script>
+
+    
+</div>
+ 
+        </div>
+    </div>
+</div>
 
 
     <!--</div>-->

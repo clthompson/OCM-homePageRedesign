@@ -348,6 +348,7 @@ body {
         //text-align: center;
         line-height: 33px;
         padding: 5px 0 5px 0;
+        letter-spacing: 3px;
       }
     }
   }
@@ -381,6 +382,7 @@ body {
       @media only screen and (max-width: $phoneS) {
         //text-align: center;
         line-height: 0px;
+        letter-spacing: 3px;
       }
     }
   }
@@ -414,7 +416,7 @@ body {
       @media only screen and (max-width: $phoneS) {
         //text-align: center;
         line-height: 0px;  //was 33
-        letter-spacing: 4px;
+        letter-spacing: 3px;
       }
     }
   }
@@ -429,24 +431,33 @@ body {
       margin: 50px 0 0 0;
       height: 40px;
     }
-    h2 {
-      //text-align: center;
-      font-family: $comeniaR;
-      font-size: 23px;
-      line-height: 77px;
-      letter-spacing: 5.5px;
-      text-transform: uppercase;
-      color: $black;
-      margin: 0;
-      padding: 0 0 0 0;
-      @media only screen and (max-width: $tabletS) {
-        //text-align: left;
-        line-height: 43px;
-        font-size: 21px;
+    .element {
+      a.wrapper {
+        text-decoration: none;
       }
-      @media only screen and (max-width: $phoneS) {
+      h2 {
         //text-align: center;
-        line-height: 33px;
+        font-family: $comeniaR;
+        font-size: 23px;
+        line-height: 77px;
+        letter-spacing: 5.5px;
+        text-transform: uppercase;
+        color: $black;
+        margin: 0;
+        padding: 0 0 0 0;
+        &:hover, &:focus{
+          color: $maroon;
+        }
+        @media only screen and (max-width: $tabletS) {
+          //text-align: left;
+          line-height: 43px;
+          font-size: 21px;
+        }
+        @media only screen and (max-width: $phoneS) {
+          //text-align: center;
+          line-height: 33px;
+          letter-spacing: 3px;
+        }
       }
     }
   }
@@ -573,7 +584,7 @@ body {
         position: absolute;
         left: 0;
         bottom: 0;
-        padding: 22px 40px 22px 70px;
+        padding: 22px 65px 22px 65px;
         @media only screen and (max-width: $tabletS) {
           background: none;
           padding: 0px 30px 20px 78px;
@@ -671,16 +682,19 @@ body {
   // prospective
   .prospective {
     background-color: $gray-med;
-    @media only screen and (max-width: $tabletS) {
-      padding: 0 78px 0 27px;
+    @media only screen and (max-width: 1025px) {
+      padding: 0 55px 0 55px;
       background-color: $gray-ML;
+    }
+    @media only screen and (max-width: 1024px) {
+      padding: 0 78px 0 27px;
     }
     @media only screen and (max-width: $phoneS) {
       padding: 0;
     }
     .element {
       text-align: center;
-      @media only screen and (max-width: $tabletS) {
+      @media only screen and (max-width: 1024px) {
         text-align: left;
         padding: 0 0 20px 51px;
         //width: 22%;
@@ -690,7 +704,7 @@ body {
       }
       .text3 {
         padding: 10px 0 10px 0;
-        @media only screen and (max-width: $tabletS) {
+        @media only screen and (max-width: 1024px) {
           background-color: $gray-05;
           padding: 5px 8px 5px 17px;
           margin: 0 0px 9px 0px;
@@ -707,7 +721,7 @@ body {
             &:hover, &:focus {
               color: $maroon;
             }
-            @media only screen and (max-width: $tabletS) {
+            @media only screen and (max-width: 1024px) {
               font-size: 19px;
               color: $white;
               width: 100%;
@@ -725,7 +739,7 @@ body {
       }
       .stf2 {
         padding: 10px 0 10px 0;
-        @media only screen and (max-width: $tabletS) {
+        @media only screen and (max-width: 1024px) {
           background-color: $gray-05;
           padding: 5px 8px 5px 17px;
           margin: 0 0px 9px 0px;
@@ -741,7 +755,7 @@ body {
           &:hover, &:focus {
             color: $maroon;
           }
-          @media only screen and (max-width: $tabletS) {
+          @media only screen and (max-width: 1024px) {
             font-size: 19px;
             color: $black; //was white
             width: 100%;
@@ -825,7 +839,7 @@ body {
         font-size: 32px;
       }
       @media only screen and (max-width: $tabletS) {
-        top: -20px;
+        top: -21px;
         position: absolute;
         right: 100px;
         left: auto;
@@ -834,7 +848,7 @@ body {
       }
       @media only screen and (max-width: $phoneS) {
         right: 30px;
-        top: -25px;
+        top: -27px;
       }
     }
     .slick-next {
@@ -847,12 +861,12 @@ body {
       }
       @media only screen and (max-width: $tabletS) {
         background: none;
-        top: -20px;
+        top: -21px;
         right: 71px;
       }
       @media only screen and (max-width: $phoneS) {
         right: 0px;
-        top: -25px;
+        top: -27px;
       }
     }
     .ByTheNumbers {
@@ -959,8 +973,11 @@ body {
                 font-size: 125px;
                 line-height: 100px;
                 //letter-spacing: 0px;
+                @media only screen and (max-width: 1150px) {
+                  font-size: 100px;
+                }
                 @media only screen and (max-width: $tabletS) {
-                  //letter-spacing: -2px;
+                  font-size: 125px;
                 }
               }
               .smallerStillNumber {
@@ -1034,8 +1051,10 @@ body {
               padding: 0;
               font-family: $comeniaB;
               color: $black;
-              font-size: calc(16px + (23 – 16) * ((25vw – 1024px) / ( 1400 – 1024)) ); // 24px
-              line-height: calc(20px + (30 – 20) * ((25vw – 1024px) / ( 1400 – 1024)) ); //30
+              font-size: 20px;
+              //font-size: calc(16px + (23 – 16) * ((25vw – 1024px) / ( 1400 – 1024)) ); // 24px
+              line-height: 24px;
+              //line-height: calc(20px + (30 – 20) * ((25vw – 1024px) / ( 1400 – 1024)) ); //30
             }
           }
         }
@@ -1085,7 +1104,7 @@ body {
         font-size: 32px;
       }
       @media only screen and (max-width: $tabletS) {
-        top: -20px;
+        top: -21px;
         position: absolute;
         right: 100px;
         left: auto;
@@ -1094,7 +1113,7 @@ body {
       }
       @media only screen and (max-width: $phoneS) {
         right: 30px;
-        top: -25px;
+        top: -27px;
       }
     }
     .slick-next {
@@ -1108,12 +1127,12 @@ body {
       }
       @media only screen and (max-width: $tabletS) {
         background: none;
-        top: -20px;
+        top: -21px;
         right: 71px;
       }
       @media only screen and (max-width: $phoneS) {
         right: 0px;
-        top: -25px;
+        top: -27px;
       }
     }
 
@@ -1173,7 +1192,8 @@ body {
         .stf2 {
           p {
             font-family: $comeniaR;
-            font-size: calc(14px + (26 – 14) * ((25vw – 1024px) / ( 1400 – 1024)) ); //35
+            font-size: 18px;
+            //font-size: calc(14px + (26 – 14) * ((25vw – 1024px) / ( 1400 – 1024)) ); //35
             //font-size: 22px;
             line-height: 25px;
             color: $white;
@@ -1450,7 +1470,7 @@ body {
         font-size: 32px;
       }
       @media only screen and (max-width: $tabletS) {
-        top: -20px;
+        top: -21px;
         position: absolute;
         right: 100px;
         left: auto;
@@ -1459,7 +1479,7 @@ body {
       }
       @media only screen and (max-width: $phoneS) {
         right: 30px;
-        top: -25px;
+        top: -27px;
       }
     }
     .slick-next {
@@ -1473,12 +1493,12 @@ body {
       }
       @media only screen and (max-width: $tabletS) {
         background: none;
-        top: -20px;
+        top: -21px;
         right: 71px;
       }
       @media only screen and (max-width: $phoneS) {
         right: 0px;
-        top: -25px;
+        top: -27px;
       }
     }
 
@@ -2043,7 +2063,7 @@ header {
 
 .alert {
   &:hover {
-    background-color: $white;
+    background-color: $white; 
   }
   h2 {
     font-family: $comeniaR;
@@ -2071,7 +2091,7 @@ header {
 
 footer {
   .part1 {
-    height: 413px;
+    height: 550px;
     //border: 1px solid $black;
     position: relative;
     @media screen and (max-width: 1024px) {
